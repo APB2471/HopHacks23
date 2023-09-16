@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class AddProfile {
-    public void NewProfile() {
+    public Profile NewProfile() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Username: ");
         String username = sc.nextLine();
@@ -22,6 +22,10 @@ public class AddProfile {
         System.out.println("Additional Information:");
         String info = sc.nextLine();
 
+        Profile newProfile = new Profile(username, firstName, lastName, email,
+                phone, city, state, zip, info);
+
+        return newProfile;
 
     }
 }
