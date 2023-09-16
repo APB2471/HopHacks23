@@ -4,31 +4,31 @@ import java.util.Scanner;
 /**
  * Main class begins the input loop that starts
  * when the program is initialized.
- *
+ * <p>
  * ASCII Art by Joan G. Stark
  */
 public class Main {
     Profile current;
+
     public static void main(String[] args) {
         ArrayList<Profile> profiles = new ArrayList<>();
         System.out.println("                            _\n" +
-                        "                          .' `'.__\n" +
-                        "                         /      \\ `'\"-,\n" +
-                        "        .-''''--...__..-/ .     |      \\\n" +
-                        "      .'               ; :'     '.  a   |\n" +
-                        "     /                 | :.       \\     =\\\n" +
-                        "    ;                   \\':.      /  ,-.__;.-;`\n" +
-                        "   /|     .              '--._   /-.7`._..-;`\n" +
-                        "  ; |       '                |`-'      \\  =|\n" +
-                        "  |/\\        .   -' /     /  ;         |  =/\n" +
-                        "  (( ;.       ,_  .:|     | /     /\\   | =|\n" +
-                        "   ) / `\\     | `\"\"`;     / |    | /   / =/\n" +
-                        "     | ::|    |      \\    \\ \\    \\ `--' =/\n" +
-                        "    /  '/\\    /       )    |/     `-...-`\n" +
-                        "   /    | |  `\\    /-'    /;\n" +
-                        "   \\  ,,/ |    \\   D    .'  \\\n" +
-                        "jgs `\"\"`   \\  nnh  D_.-'L__nnh\n" +
-                        "            `\"\"\"`");
+                "                          .' `'.__\n" +
+                "                         /      \\ `'\"-,\n" +
+                "        .-''''--...__..-/ .     |      \\\n" +
+                "      .'               ; :'     '.  a   |\n" +
+                "     /                 | :.       \\     =\\\n" +
+                "    ;                   \\':.      /  ,-.__;.-;`\n" +
+                "   /|     .              '--._   /-.7`._..-;`\n" +
+                "  ; |       '                |`-'      \\  =|\n" +
+                "  |/\\        .   -' /     /  ;         |  =/\n" +
+                "  (( ;.       ,_  .:|     | /     /\\   | =|\n" +
+                "   ) / `\\     | `\"\"`;     / |    | /   / =/\n" +
+                "     | ::|    |      \\    \\ \\    \\ `--' =/\n" +
+                "    /  '/\\    /       )    |/     `-...-`\n" +
+                "   /    | |  `\\    /-'    /;\n" +
+                "   \\  ,,/ |    \\       .'  \\\n" +
+                "            `\"\"\"`");
         System.out.println("TrialHelp 1.0");
         Scanner sc = new Scanner(System.in);
         while (true) {
@@ -57,6 +57,14 @@ public class Main {
                 System.out.println("Invalid selection, please type the" +
                         "number of an option listed.");
             }
+        }
+
+
+        Distance_Calculator d = new Distance_Calculator();
+        try {
+            d.getLoc();
+        } catch (Exception e) {
+            System.out.println("failed");
         }
     }
 }

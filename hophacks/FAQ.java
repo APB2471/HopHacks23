@@ -76,6 +76,5 @@ public class FAQ {
                 break;
             }
         }
-        userFAQ.close();
     }
 }
