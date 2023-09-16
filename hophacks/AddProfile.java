@@ -1,6 +1,16 @@
 import java.util.Scanner;
 
 public class AddProfile {
+    /*
+    TODO: Add fields
+    public int age;
+    public Sex sex;
+    public Race race;
+    public String previousTreatments;
+    public String otherHealthProblems;
+    public String disease;
+    public String stage;
+     */
     public Profile NewProfile() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Username: ");
