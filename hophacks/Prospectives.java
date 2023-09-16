@@ -8,7 +8,6 @@ public class Prospectives {
     private String city;
     private String state;
     private int zipCode;
-    private String;
 
     public void Profile(String firstName) {
         this.firstName = firstName;
@@ -33,7 +32,6 @@ public class Prospectives {
         System.out.println("ZIP Code:");
         System.out.println(zipCode);
         System.out.println("Questions or Comments:");
-        System.out.println(questions);
 
     }
 }
