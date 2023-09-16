@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Scanner;
 
 /**
@@ -8,7 +9,7 @@ import java.util.Scanner;
  * ASCII Art by Joan G. Stark
  */
 public class EZTrials {
-    Profile current;
+    static Profile currentProfile;
     public static void main(String[] args) {
         ArrayList<Profile> profiles = new ArrayList<>();
         System.out.println("                            _\n" +
@@ -52,7 +53,12 @@ public class EZTrials {
                         "has been created");
             } else if (choice == 4) {
                 System.out.println("Enter your username: ");
-                //TODO: Select Profile from entered username
+                String checkUsername = sc.nextLine();
+                for (Profile profile : profiles) {
+                    if (Objects.equals(profile.getUsername(), checkUsername)) {
+                        currentProfile = profile;
+                    }
+                }
             } else {
                 System.out.println("Invalid selection, please type the" +
                         "number of an option listed.");
