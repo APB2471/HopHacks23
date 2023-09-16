@@ -3,23 +3,25 @@ import java.util.Scanner;
 public class AddProfile {
     public void NewProfile() {
         Scanner sc = new Scanner(System.in);
-
-
+        System.out.println("Username: ");
+        String username = sc.nextLine();
         System.out.println("First Name:");
         String firstName = sc.nextLine();
         System.out.println("Last Name:");
-        System.out.println(lastName);
+        String lastName = sc.nextLine();
         System.out.println("Email:");
-        System.out.println(email);
-        System.out.println("Daytime Phone:");
-        System.out.println(daytimePhone);
+        String email = sc.nextLine();
+        System.out.println("Phone Number:");
+        String phone = sc.nextLine();
         System.out.println("City:");
-        System.out.println(city);
+        String city = sc.nextLine();
         System.out.println("State:");
-        System.out.println(state);
+        String state = sc.next();
         System.out.println("ZIP Code:");
-        System.out.println(zipCode);
-        System.out.println("Questions or Comments:");
+        String zip = sc.nextLine();
+        System.out.println("Additional Information:");
+        String info = sc.nextLine();
+
 
     }
 }
