@@ -5,6 +5,7 @@ import java.util.Scanner;
  * Main class begins the input loop that starts
  * when the program is initialized.
  *
+ * ASCII Art by Joan G. Stark
  */
 public class Main {
     Profile current;
