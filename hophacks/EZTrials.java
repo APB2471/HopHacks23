@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * ASCII Art by Joan G. Stark
  */
-public class Main {
+public class EZTrials {
     Profile current;
     public static void main(String[] args) {
         ArrayList<Profile> profiles = new ArrayList<>();
@@ -29,7 +29,7 @@ public class Main {
                         "   \\  ,,/ |    \\   D    .'  \\\n" +
                         "jgs `\"\"`   \\  nnh  D_.-'L__nnh\n" +
                         "            `\"\"\"`");
-        System.out.println("TrialHelp 1.0");
+        System.out.println("EZTrials 1.1");
         Scanner sc = new Scanner(System.in);
         while (true) {
             System.out.println("Please enter your selection");
