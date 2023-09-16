@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class FAQ {
     public static void main(String[] args) {
         Scanner userFAQ = new Scanner(System.in);
