@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Main class begins the input loop that starts
  * when the program is initialized.
  *
- * ASCII Art by Joan G. Stark
+ * ASCII Art based on design by Joan G. Stark
  */
 public class EZTrials {
     static Profile currentProfile;
@@ -19,7 +19,7 @@ public class EZTrials {
                         "      .'               ; :'     '.  a   |\n" +
                         "     /                 | :.       \\     =\\\n" +
                         "    ;                   \\':.      /  ,-.__;.-;`\n" +
-                        "   /|     .              '--._   /-.7`._..-;`\n" +
+                        "   /|     .              '--._   /-./`._..-;`\n" +
                         "  ; |       '                |`-'      \\  =|\n" +
                         "  |/\\        .   -' /     /  ;         |  =/\n" +
                         "  (( ;.       ,_  .:|     | /     /\\   | =|\n" +
@@ -27,8 +27,8 @@ public class EZTrials {
                         "     | ::|    |      \\    \\ \\    \\ `--' =/\n" +
                         "    /  '/\\    /       )    |/     `-...-`\n" +
                         "   /    | |  `\\    /-'    /;\n" +
-                        "   \\  ,,/ |    \\   D    .'  \\\n" +
-                        "jgs `\"\"`   \\  nnh  D_.-'L__nnh\n" +
+                        "   \\  ,,/ |    \\  |     .'  \\\n" +
+                        "    `\"\"`   \\ \\  |___.-'L____ \n" +
                         "            `\"\"\"`");
         System.out.println("EZTrials 1.1");
         Scanner sc = new Scanner(System.in);
