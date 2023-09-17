@@ -1,16 +1,9 @@
 import java.util.Scanner;
 
+/**
+ * Form for adding a new profile to the system.
+ */
 public class AddProfile {
-    /*
-    TODO: Add fields
-    public int age;
-    public Sex sex;
-    public Race race;
-    public String previousTreatments;
-    public String otherHealthProblems;
-    public String disease;
-    public String stage;
-     */
     public Profile NewProfile() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Username: ");
@@ -29,13 +22,29 @@ public class AddProfile {
         String state = sc.next();
         System.out.println("ZIP Code:");
         String zip = sc.nextLine();
+        System.out.println("Sex:");
+        String sex = sc.nextLine();
+        System.out.println("Age:");
+        Integer age = sc.nextInt();
+        System.out.println("Race:");
+        String race = sc.nextLine();
+        System.out.println("Relevant Previous Treatments");
+        String prevTreatments = sc.nextLine();
+        System.out.println("Other Health Treatments");
+        String otherHealthTreatments = sc.nextLine();
+        System.out.println("Disease (Enter N/A if not applicable)");
+        String disease = sc.nextLine();
+        System.out.println("Stage of disease (Enter N/A if not applicable)");
+        String stage = sc.nextLine();
         System.out.println("Additional Information:");
         String info = sc.nextLine();
 
-        Profile newProfile = new Profile(username, firstName, lastName, email,
-                phone, city, state, zip, info);
 
-        return newProfile;
+        return new Profile(username, firstName,lastName,
+                 email, phone, city, state,
+                zip, sex, info, age, race,
+               prevTreatments, otherHealthTreatments,
+                disease, stage);
 
     }
 }
