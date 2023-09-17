@@ -25,7 +25,7 @@ public class AddProfile {
         System.out.println("Sex:");
         String sex = sc.nextLine();
         System.out.println("Age:");
-        Integer age = sc.nextInt();
+        int age = sc.nextInt();
         System.out.println("Race:");
         String race = sc.nextLine();
         System.out.println("Relevant Previous Treatments");
