@@ -9,7 +9,7 @@ public class Distance_Calculator {
 
     public void getLoc() throws java.io.IOException {
         System.out.println("runs");
-        URL url = new URL("https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=${AIzaSyA92DxhGF1wtzwkzlci1JYbDTZLM_fLvhY}");
+        URL url = new URL("https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=${}");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
 
